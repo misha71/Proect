@@ -1,0 +1,1 @@
+<?foreach($newsList as $vivod) {?><div class = "block"><p class = "data"><?=date('d.m.Y',$vivod["idate"]);?></p></div><h2><?=$vivod["title"]?></h2><div class = "anounce"><?=$vivod["announce"]?></div><a href = "news/<?=$vivod["id"]?>">подробнее</a></div><? } ?>

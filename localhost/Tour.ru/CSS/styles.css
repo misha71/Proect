@@ -1,0 +1,166 @@
+/*Autor cite: Pavlov  Mikhail*/
+@import= url ("reset.css");
+body {
+background: rgb(0, 163, 255);
+margin: 0px;
+background-image: url(../images/side.jpg),url(../images/side.jpg);
+background-repeat: repeat-y, repeat-y;
+background-position: left,right;
+background-size: 80px;
+}
+#header{
+display:block;
+}
+#header img{
+width: 100%;
+}
+a{
+text-decoration: none;
+color: white;
+}
+a:hover{
+color: green;
+}
+#menu{
+text-align:center;
+}
+#drop{
+position:absolute;
+left:5px;
+top:35px;
+display:none;
+z-index:10;
+}
+#drop li a {
+display:block;
+text-decoration:none;
+color:#000000;
+font-weight:normal;
+padding:3px;
+width:120px;
+height:auto;
+background:rgb(0, 163, 255);
+border:thin solid blue;
+}
+#drop li a:hover{
+display: block;
+text-decoration:none;
+color:white;
+background:rgb(179, 78, 78);
+}
+li:hover #drop{
+display: block;
+}
+
+#main {
+margin-left: -7px;
+text-align: center;
+min-width: 100%;
+min-height: 100%;
+}
+li {
+list-style-type: none;
+display: inline-block;
+padding-left: 15px;
+}
+ul{
+margin-left: -60px;
+}
+#tablet{
+border: 1px solid white;
+padding: 8px;
+display: inline-block;
+border-radius: 5px;
+background-image: url(../images/girle.jpg);
+margin-top: 25px;
+}
+#sake{
+margin-left: 68px;
+}
+.inputdiv{
+padding-bottom: 8px;
+text-align: left;
+}
+
+#set{
+margin-left: 11px;
+}
+
+#sakel{
+margin-left: -1px;
+}
+.inputspan{
+display:inline-block;
+vertical-align:middle;
+}
+.inputselect{
+border: 1px solid yellow;
+width:200px;
+height: 10 px;
+vertical-align: middle;
+margin-left: 25px;
+}
+.inputselect1{
+border: 1px solid yellow;
+width:204px;
+height: 10 px;
+vertical-align: middle;
+margin-left: 73px;
+}
+.inputspan1{
+margin-right: 10 px;
+vertical-align:middle;
+margin-left: 25px;
+}
+#same{
+margin-left: -25px;
+}
+#core{
+margin-left: 65px;
+}
+.foodt{
+display: inline-block;
+padding-left: -2px;
+vertical-align: middle;
+}
+.food1{
+vertical-align: middle;
+width: 90px;
+margin-left: 10px;
+}
+.food2{
+vertical-align: middle;
+}
+.inputselect2{
+width: 40px;
+vertical-align: middle;
+border: 1px solid yellow;
+height: 10 px;
+margin-left: 20px;
+}
+#finishtour{
+width: 140px;
+padding: 1px 0 1px 5px;
+height: 20px;
+background-image:url(../images/date.png);
+background-repeat: no-repeat;
+background-position: 97%;
+}
+.search1{
+margin-left: 10px;
+vertical-align: bottom;
+height: 34px;
+line-height: 34px;
+display: inline-block;
+}
+#bodys{
+white-space: pre-wrap;
+color: white;
+}
+.food2{
+margin: 0 0 0 5px;
+}
+.search{
+margin-left: -200px;
+margin-top: 6px;
+}

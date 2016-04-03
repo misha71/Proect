@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Заказть путёвку - пляжный, активный, оздоровительный и другие виды отдыха</title>
+<meta name="description" content="Компания предоставляет любые виды отдыха на Ваш вкус по оптимальным ценам. Закажите путёвку онлайн на сайте">
+<meta name= "Keywords" content="Заказ путёвка пляжный активный отдых">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+@font-face{
+font-family:tahomabd;
+src: url(../fonts/tahomabd.ttf);
+}
+@media screen and (min-device-width:1600px){
+#main{width: 100%;}
+}
+@media screen and (min-device-width:1280px){
+#main{width: 100%;}
+}
+@media screen and (min-device-width:1024px){
+#main{width: 100%;}
+}
+<!--
+<script>
+document.getElementByid("tablet").style.background-size="30px"
+</script>
+-->
+</style>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id = "main">
+<a href ="index.html" id="header">
+<img src="images/Пляжный отдых.png" alt ="Заказать путёвку" title="Заказать путёвку">
+</a>
+<div id="menu">
+<ul>
+<li type="disc"> <a href="">Главная</a>
+<img src="images/menuline.png"></li>
+<li type="disc" style="position: relative"><a href="">Виды отдыха</a>
+<img src="images/menuline.png">
+<ul id="drop">
+<li><a href="">автобусные туры</a></li>
+<li><a href="">круизы</a></li>
+<li><a href="">горнолыжные туры</a></li>
+<li><a href="">пляжный отдых</a></li>
+</ul>
+</li>
+<li type="disc"><a href="">Визы</a>
+<img src="images/menuline.png"></li>
+<li type="disc"><a href="">Отзывы</a>
+<img src="images/menuline.png"></li>
+<li type="disc"><a href="">О нас</a>
+<img src="images/menuline.png"></li>
+<li type="disc"><a href="">Контакты</a>
+<img src="images/menuline.png"></li>
+<li type="disc"><a href="Practic.php">Регистрация</a>
+<img src="images/menuline.png"></li>
+</ul>
+</div>
+<!--конец навигационного меню-->
+<h1>Заказать тур</h1>
+<div id="tablet">
+<!--
+<?
+   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+     echo '<h1>Вы успешно прошли регистрацию</h1>';
+   }
+ ?>
+ -->
+<form action="<?=$_SERVER['PHP_SELF']?>" method="POST" name="" id="" class="">
+<input type="hidden" name="" value="">
+<input type="hidden" name="" value="">
+<div class="inputdiv">
+<span class="inputspan">Вылет из:</span>
+<select class="inputselect" id="set" name="myselect">
+<option value="">Выберите город</option>
+<option value="">Москва</option>
+<option value="">Питербург</option>
+<option value="">Новгород</option>
+</select>
+<!--
+<?php
+foreach($_GET['myselect'] as $val){
+echo"Выбрано:$val<BR>";}
+?>
+-->
+</div>
+<div class="inputdiv">
+<span class="inputspan">Страна:</span>
+<select class="inputselect" name="">
+<option value="">Выберите страну</option>
+<option value="">ОАЭ</option>
+<option value="">Тайланд</option>
+<option value="">Въетнам</option>
+<option value="">Италия</option>
+<option value="">Куба</option>
+<option value="">Доминикана</option>
+<option value="">Австрия</option>
+</select>
+</div>
+<div class="inputdiv"
+<span class="inputspan">Курорт:</span>
+<select class="inputselect" name="">
+<option value="">Выберите курорт</option>
+</select>
+</div>
+<div class="inputdiv"
+<span class="inputspan">Отель:</span>
+<span class="inputspan1">
+<label>
+<input type="radio" name="" value="" checked>категория</label>
+</span>
+<span class="inputspan1">
+<label>
+<input type="checkbox" name="" value="" id="same">2*</label>
+</span>
+<span class="inputspan1">
+<label>
+<input type="checkbox" name="" value="" id="same">3*</label>
+</span>
+<span class="inputspan1">
+<label>
+<input type="checkbox" name="" value="" id="same">4*</label>
+<span class="inputspan1">
+<label>
+<input type="checkbox" name="" value="" id="same">5*</label>
+</span>
+</div>
+<div class="inputdiv">
+<span class="inputspan">&nbsp;</span>
+<span class="inputspan1" id="core">
+<label>
+<input type="radio" name="" value="" id="">название</label>
+</span>
+</div>
+<div class="inputdiv">
+<span class="inputspan">&nbsp;</span>
+<select class="inputselect1" id="" name="">
+<option value="">Выбрать всё</option>
+</select>
+</div>
+<div class="inputdiv">
+<span class="inputspan">Питание:</span>
+<span class="foodt food1">
+<label>
+<input type="radio" name="" value="" id="" class="inp1">Завтрак</label>
+</span>
+<span class="foodt food2">
+<label>
+<input type="radio" name="" value="" id="" class="inp1">Полупансион</label>
+</span>
+<span class="foodt food3">
+<label>
+<input type="radio" name="" value="" id="" class="inp1">Без питания</label>
+</span>
+</div>
+<div class="inputdiv">
+<span class="inputspan">&nbsp</span>
+<span class="foodt food1" id="sake">
+<label>
+<input type="radio" name="" value="" class="inp1">Пансион</label>
+</span>
+<span class="foodt food2">
+<label>
+<input type="radio" name="" value="" id="" class="inp1">Всё включено</label>
+</span>
+<span class="foodt food3">
+<label>
+<input type="radio" name="" value="" id="" class="inp1">Ультра всё включено</label>
+</span>
+</div>
+<div class="inputdiv">
+<span class="inputspan">Размещение:</span>
+<select class="inputselect" id="sakel" name="">
+<option value="">DBL: 2-х местный номер</option>
+<option value="">SNG: 1 местный номер</option>
+<option value="">1 взрослый с 1 ребенком в SNG</option>
+<option value="">1 взрослый с 2 детьми в SNG</option>
+<option value="">2 взрослых с 1 ребенком в DBL</option>
+<option value="">TRL: 3-х местный номер</option>
+</select>
+</div>
+<div class="inputdiv">
+<span class="inputspan">Кол.ночей:</span>
+от
+<select class="inputselect2" id="" name="">
+<option value="">1</option>
+<option value="">2</option>
+<option value="">3</option>
+<option value="">4</option>
+<option value="">5</option>
+<option value="">6</option>
+<option value="">7</option>
+<option value="">8</option>
+<option value="">9</option>
+<option value="">10</option>
+</select>
+&nbsp;&nbsp;до&nbsp;&nbsp;
+<select class="inputselect2" id="" name="">
+<option value="">1</option>
+<option value="">2</option>
+<option value="">3</option>
+<option value="">4</option>
+<option value="">5</option>
+<option value="">6</option>
+<option value="">7</option>
+<option value="">8</option>
+<option value="">9</option>
+<option value="">10</option>
+</select>
+</div>
+<div class="inputdiv" id="">
+<span class="inputspan">Дата начала тура</span>
+<div style="display:inline;position:relative;z-index:1;zoom:1">
+<input class="text" name="" id="finishtour" class="">
+<input type="hidden" name="SDay">
+<input type="hidden" name="SMonth">
+<input type="hidden" name="SYear">
+<input type="hidden" name="EDay">
+<input type="hidden" name="EMonth">
+<input type="hidden" name="EYear">
+</div>
+</div>
+<div class="search">
+<input type="submit" class="" onclick="alert('отправка Ваших данных')">
+<span class="search1">
+<a href="">Расширенный поиск тура</a>
+</span>
+</div>
+</form>
+</div>
+<!--форма-->
+<div id="bodys">
+<a href="">
+<img src="images/For body.jpg" alt="Заказать путёвку" title="Заказать путёвку">
+</a>
+<p>
+Компания Саймала предлагает Вам
+получить незабываемое впечатления от отдыха
+в России и за границей по приемлимым ценам.
+Закажите путёвку у нас и получите наш фирменный подарок.
+</p>
+</div>
+<div id="footer">
+<span class="footerlink">
+<a href="">
+<img src="Images/ОАЭ.png">
+ОАЭ
+</a>
+</span>
+<span class="footerlink">
+<a href="">
+<img src="Images/Тайланд.png">
+Тайланд
+</a>
+</span>
+<span class="footerlink">
+<a href="">
+<img src="Images/Вьетнам.png">
+Вьетнам
+</a>
+</span>
+<span class="footerlink">
+<a href="">
+<img src="Images/Италия.png">
+Италия
+</a>
+</span>
+<span class="footerlink">
+<a href="">
+<img src="Images/Куба.png">
+Куба
+</a>
+</span>
+<span class="footerlink">
+<a href="">
+<img src="Images/Доминикано.png">
+Доминикано
+</a>
+</span>
+<span class="footerlink">
+<a href="">
+<img src="Images/Австрия.png">
+Австрия
+</a>
+</span>
+</span>
+<span class="footerlink">
+<a href="">Все страны</a>
+</span>
+</div>
+</div>
+<!--весь блок-->
+</body>
+</html
